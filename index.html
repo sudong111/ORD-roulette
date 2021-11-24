@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head> <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer> </script>
+    <title>ORD-Roulette</title>  
+</head>
+<body>
+  <h1>원랜디 랜덤 룰렛</h1>
+  <p>랜덤룰 외 다른 룰에서는 인원이 정해져 있습니다. (대회룰 3명, 듀컨룰 4명 고정)<br><br>랜덤룰을 돌릴때만 인원을 설정해 주세요.</p>
+  
+  <select class="Rules_Box" id="Rules_Box" onchange="Restart()">
+    <option value="">--선택--</option>
+    <option value="Rules_1">대회룰(1마뎀3물뎀)</option>
+    <option value="Rules_2">대회룰(3마뎀1물뎀)</option>
+    <option value="Rules_3">랜덤룰</option>
+    <option value="Rules_4">듀컨룰</option></select>
+
+  <select class="People_Box" id="People_Box" onchange="Restart()">
+    <option value="">--선택--</option>
+    <option value="People_1">1명</option>
+    <option value="People_2">2명</option>
+    <option value="People_3">3명</option>
+    <option value="People_4">4명</option></select>
+
+  <input type="button" value="실행" class="Button_Play" id="Button_Play" onclick="Play()"></input>
+  <div class="Div_Check" id="Div_Check">
+    <br><span class="Check_Text" id="Check_Text"></span><br><br>
+    <span class="Check_Help" id="Check_Help"></span><br><br>
+    <input type="button" value="룰확인" class="Button_Check" id="Button_Check" onclick="Check()"></input></div>
+
+  <div class="Div_4_1p" id="Div_4_1p">
+    <button class="Button_4_1p" id="Button_4_1p" onclick="Rule_4(Button_4_1p)">확인</button><br><br>
+    <span class="Rule_4_Text_1" id="Rule_4_Text_1"></span><span class="Rule_4_Text_1_2" id="Rule_4_Text_1_2"></span></div>
+
+  <div class="Div_4_2p" id="Div_4_2p">
+    <button class="Button_4_2p" id="Button_4_2p" onclick="Rule_4(Button_4_2p)">확인</button><br><br>
+    <span class="Rule_4_Text_2" id="Rule_4_Text_2"></span><span class="Rule_4_Text_2_2" id="Rule_4_Text_2_2"></span></div>
+
+  <div class="Div_4_3p" id="Div_4_3p">
+    <button class="Button_4_3p" id="Button_4_3p" onclick="Rule_4(Button_4_3p)">확인</button><br><br>
+    <span class="Rule_4_Text_3" id="Rule_4_Text_3"></span><span class="Rule_4_Text_3_2" id="Rule_4_Text_3_2"></span></div>
+
+  <div class="Div_4_4p" id="Div_4_4p">
+    <button class="Button_4_4p" id="Button_4_4p" onclick="Rule_4(Button_4_4p)">확인</button><br><br>
+    <span class="Rule_4_Text_4" id="Rule_4_Text_4"></span><span class="Rule_4_Text_4_2" id="Rule_4_Text_4_2"></span></div>
+
+  <div class="Div_3_1p" id="Div_3_1p">
+    <button class="Button_3_1p" id="Button_3_1p" onclick="Rule_3(Button_3_1p)">확인</button><br><br>
+    <span class="Rule_3_Text_1" id="Rule_3_Text_1"></span><span class="Rule_3_Text_1_2" id="Rule_3_Text_1_2"></span></div>
+
+  <div class="Div_3_2p" id="Div_3_2p">
+    <button class="Button_3_2p" id="Button_3_2p" onclick="Rule_3(Button_3_2p)">확인</button><br><br>
+    <span class="Rule_3_Text_2" id="Rule_3_Text_2"></span><span class="Rule_3_Text_2_2" id="Rule_3_Text_2_2"></span></div>
+
+  <div class="Div_3_3p" id="Div_3_3p">
+    <button class="Button_3_3p" id="Button_3_3p" onclick="Rule_3(Button_3_3p)">확인</button><br><br>
+    <span class="Rule_3_Text_3" id="Rule_3_Text_3"></span><span class="Rule_3_Text_3_2" id="Rule_3_Text_3_2"></span></div>
+
+  <div class="Div_2_1p" id="Div_2_1p">
+    <button class="Button_2_1p" id="Button_2_1p" onclick="Rule_2(Button_2_1p)">확인</button><br><br>
+    <span class="Rule_2_Text_1" id="Rule_2_Text_1"></span><span class="Rule_2_Text_1_2" id="Rule_2_Text_1_2"></span>
+    <span class="Rule_2_Text_1_3" id="Rule_2_Text_1_3"></span><span class="Rule_2_Text_1_4" id="Rule_2_Text_1_4"></span></div>
+    
+  <div class="Div_2_2p" id="Div_2_2p">
+    <button class="Button_2_2p" id="Button_2_2p" onclick="Rule_2(Button_2_2p)">확인</button><br><br>
+    <span class="Rule_2_Text_2" id="Rule_2_Text_2"></span><span class="Rule_2_Text_2_2" id="Rule_2_Text_2_2"></span>
+    <span class="Rule_2_Text_2_3" id="Rule_2_Text_2_3"></span><span class="Rule_2_Text_2_4" id="Rule_2_Text_2_4"></span></div>
+
+  <div class="Div_1_1p" id="Div_1_1p">
+    <button class="Button_1_1p" id="Button_1_1p" onclick="Rule_1()">확인</button><br><br>
+    <span class="Rule_1_Text_1" id="Rule_1_Text_1"></span><span class="Rule_1_Text_1_2" id="Rule_1_Text_1_2"></span></div>
+
+	</body>
+</html>

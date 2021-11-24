@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
+
+body{
+    background-color: #F5F5F5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+div{
+    visibility: hidden;
+    display: block;
+    white-space: nowrap;
+    text-align: center;
+    padding: 8px 0;
+}
+h1{
+    padding: 13px 0;
+    white-space: nowrap;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 40px
+}
+p{
+    padding: 13px 0;
+    white-space: nowrap;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 20px;
+}
+span{
+    visibility: hidden;
+    white-space: nowrap;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 18px;
+}
+select{
+    width: 200px;
+    padding: .8em .5em;
+    font-family: inherit;
+    border: 1px solid #999;
+    border-radius: 0px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 18px;
+}
+button {
+    width: 100px;
+    font-family: inherit;
+    padding: .8em .5em;
+    border: 1px solid #999;
+    border-radius: 0px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 13px 0;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 18px;
+}
+
+input{
+    width: 100px;
+    font-family: inherit;
+    padding: .8em .5em;
+    border: 1px solid #999;
+    border-radius: 0px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 13px 0;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 16px;
+}
+.Div_4_1p, .Div_4_2p, .Div_4_3p, .Div_4_4p{
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+.Div_3_1p{
+    width: 33.3%;
+    float: left;
+    position: absolute;
+
+}
+.Div_3_2p{
+    width: 33.3%;
+    float: left;
+    position: absolute;
+    left: 33.3%;
+
+}
+.Div_3_3p{
+    width: 33.3%;
+    float: left;
+    position: absolute;
+    left: 66.6%;
+}
+.Div_2_1p{
+    width: 50%;
+    float: left;
+    position: absolute;
+}
+.Div_2_2p{
+    width: 50%;
+    float: left;
+    position: absolute;
+    left: 50%
+}
+.Div_1_1p{
+    width: 100%;
+    float: left;
+    position: absolute;
+}
+.Rule_2_Text_1_3{
+    position:absolute;
+    text-align: right;
+    width: 50%;
+    left: 0%;
+}
+.Rule_2_Text_1_4{
+    position: absolute;
+    width: 50%;
+    text-align: left;
+    right: 0%;
+}
+.Rule_2_Text_2_3{
+    position:absolute;
+    text-align: right;
+    width: 50%;
+    left: 0%;
+}
+.Rule_2_Text_2_4{
+    position: absolute;
+    width: 50%;
+    text-align: left;
+    right: 0%;
+}
+
